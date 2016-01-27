@@ -37,8 +37,6 @@ app.config(function($routeProvider) {
 	}).when("/calendar",{
 		templateUrl: "views/calendar.html",
 		controller: "CalendarCtrl"
-	});
-	
-	$routeProvider.otherwise({ redirectTo : '/home' });
+	}).otherwise({ redirectTo : '/home' });
 });
 	
